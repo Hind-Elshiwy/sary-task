@@ -1,0 +1,19 @@
+.connection {
+    position: relative;
+    top: 40vh;
+    svg {
+        display: block;
+        margin: 20px auto;
+        width: 145px;
+        height: 145px;
+    }
+    img {
+        width: 200px;
+        margin: 40px auto 10px;
+        display: block;
+    }
+    p {
+        text-align: center;
+        font-size: 18px;
+    }
+}
