@@ -1,0 +1,71 @@
+<section class="heroes-list">
+    <section class="filter">
+        <div class="heroes__box filter__box">
+            <div class="filter__title">
+                <span>Filters</span>
+                <span class="material-icons-outlined">
+                    filter_list
+                </span>
+            </div>
+            <div class="filter__input">
+                <input type="text" [(ngModel)]="searchKeyword">
+                <span class="material-icons-outlined">
+                    search
+                </span>
+            </div>
+            <div class="sort">
+                <p>Sort By Power</p>
+                <label class="switch">
+                    <input type="checkbox" [checked]="softChecked" (change)="toggleSort($event)">
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+        </div>
+        <div *ngIf="heroesList.length; then thenBlock else elseBlock"></div>
+        <ng-template #thenBlock>
+            <div class=" details__box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col table__header">
+                            Hero Name
+                        </div>
+                        <div class="col table__header">
+                            Powers
+                        </div>
+                        <div class="col table__header">
+                            Rate
+                        </div>
+                    </div>
+                    <div class="row" *ngFor="let hero of heroesList | heroesSearch: searchKeyword | heroesOrder: sort; let count = count">
+                        <div *ngIf="(count >= 1); then herosSection else NoDataInSearch"></div>
+                        <ng-template #herosSection>
+                            <div class="col hero-name">
+                                <a href [routerLink]="['/heroes', hero.id]">
+                                    {{hero.name}}
+                                </a>
+                            </div>
+                            <div class="col">
+                                {{hero.powers}}
+                            </div>
+                            <div class="col">
+                                <rating [(ngModel)]="hero.rate" [max]="max" [readonly]="isReadonly"></rating>
+                            </div>
+                        </ng-template>
+                        <ng-template #NoDataInSearch>
+                            <div class=" details__box no-data">
+                                Sorry, no data found for your search.
+                            </div>
+                        </ng-template>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template #elseBlock>
+            <div class=" details__box no-data">
+                Sorry,no data for Heroes
+            </div>
+        </ng-template>
+
+
+    </section>
+</section>

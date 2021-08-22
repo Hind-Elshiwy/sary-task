@@ -1,0 +1,39 @@
+<section class="heroes-details">
+    <div class="details__box">
+        <div class="details__container">
+            <div class="hero__img">
+                <span class="material-icons-outlined">
+                    person_outline
+                    </span>
+            </div>
+            <div class="hero__info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col table__header">
+                            Hero Name:
+                        </div>
+                        <div class="col">
+                            {{heroDetails?.name}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col table__header">
+                            Description:
+                        </div>
+                        <div class="col">
+                            {{heroDetails?.description}}
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__powers">
+                    <div class="col">
+                        Powers
+                    </div>
+                    <div class="hero__power">
+                        {{heroDetails?.powers}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

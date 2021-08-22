@@ -1,0 +1,20 @@
+.home-container {
+    margin-top: 90px;
+    background-color: white;
+    background-image: url(../../../assets/images/The_Marvel_Universe.png);
+    background-size: 100% 100%;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 90vh;
+    font-family: 'Pacifico', sans-serif;
+    font-size: 30px;
+    p {
+        background: linear-gradient( 260deg, #57d990, #28d8b7);
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

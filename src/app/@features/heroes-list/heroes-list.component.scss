@@ -1,0 +1,172 @@
+.heroes-list {
+    margin-top: 70px;
+    background-color: #fafafa !important;
+    background-image: url(../../../assets/images/black-widow.png);
+    background-size: 30% 100%;
+    background-position: right;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 92vh;
+    .filter__box {
+        margin-top: 200px;
+        margin-left: 100px;
+    }
+    .details__box {
+        position: relative;
+        background-color: #fff;
+        margin-top: 200px;
+        margin-left: 25px;
+        .container {
+            min-width: 700px;
+            .row {
+                background-color: #fff;
+                border: 1px solid rgba(112, 110, 110, 0.125);
+                border-top: none;
+                .table__header {
+                    font-weight: 900;
+                }
+                .hero-name {
+                    cursor: pointer;
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        color: #2f8367;
+                    }
+                }
+                .col {
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    &:not(:last-child) {
+                        border-right: 1px solid rgba(112, 110, 110, 0.125);
+                    }
+                    a {
+                        text-decoration: inherit;
+                        color: inherit;
+                        &:visited {
+                            text-decoration: inherit;
+                            color: inherit;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .filter {
+        display: flex;
+        .heroes__box {
+            position: relative;
+            background-color: #fff;
+            border: 1px solid rgba(112, 110, 110, 0.125);
+            padding: 10px 20px;
+            .filter__title {
+                display: flex;
+                justify-content: space-between;
+                font-size: 16px;
+                margin-bottom: 25px;
+            }
+            .filter__input {
+                position: relative;
+                input {
+                    font-size: 0.98rem;
+                    padding-left: 40px;
+                    border: 1px solid rgba(112, 110, 110, 0.125);
+                    height: 32px;
+                    width: 275px;
+                    &:focus {
+                        outline: 1px solid rgba(6, 34, 243, 0.767);
+                    }
+                }
+                span {
+                    position: absolute;
+                    width: 20px;
+                    top: 6px;
+                    left: 9px;
+                    z-index: 1;
+                    font-size: 20px;
+                    color: rgb(144 131 131 / 77%);
+                }
+            }
+            .sort {
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                p {
+                    margin: 0px;
+                }
+                .switch {
+                    margin-left: 20px;
+                    width: 50px;
+                    height: 25px;
+                    position: relative;
+                    display: inline-block;
+                    & input {
+                        opacity: 0;
+                        width: 0;
+                        height: 0;
+                        &:checked+.slider {
+                            background-color: #28d8b7;
+                        }
+                        &:focus+.slider {
+                            box-shadow: 0 0 1px #28d8b7;
+                        }
+                        &:checked+.slider:before {
+                            -webkit-transform: translateX(26px);
+                            -ms-transform: translateX(26px);
+                            transform: translateX(26px);
+                        }
+                    }
+                    .slider {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0;
+                        background-color: #ccc;
+                        transition: 0.4s;
+                        &.round {
+                            border-radius: 34px;
+                            &:before {
+                                border-radius: 50%;
+                            }
+                        }
+                        &:before {
+                            position: absolute;
+                            content: "";
+                            height: 18px;
+                            width: 18px;
+                            left: 3px;
+                            bottom: 4px;
+                            background-color: white;
+                            transition: 0.4s;
+                        }
+                    }
+                }
+            }
+        }
+        .no-data {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 70px;
+            font-size: 17px;
+            color: gray;
+        }
+    }
+}
+
+::ng-deep .bs-rating-star {
+    cursor: default;
+    font-size: 20px;
+    color: #080e0d;
+    &.active {
+        cursor: default;
+        font-size: 20px;
+        color: #28d8b7;
+    }
+}

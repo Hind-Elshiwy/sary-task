@@ -1,0 +1,29 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 18px 48px 0 rgb(0 0 0 / 8%);
+    width: 100%;
+    z-index: 1000;
+    .navbar-brand {
+        font-family: 'Pacifico', sans-serif;
+        margin-left: 15px;
+        font-size: 30px;
+        color: #28d8b7;
+        &:hover {
+            color: #199780;
+        }
+    }
+    &-nav {
+        margin-left: 50px;
+        .nav-item {
+            margin-right: 20px;
+            font-size: 25px;
+            & a:hover,
+            & a:active,
+            & a:focus {
+                color: #28d8b7;
+            }
+        }
+    }
+}

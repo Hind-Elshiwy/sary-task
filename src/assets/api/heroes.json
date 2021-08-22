@@ -1,0 +1,22 @@
+[{
+        "id": 3,
+        "name": "Tim Berners-Lee",
+        "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem .",
+        "powers": "Freedom Protector",
+        "rate": 3
+    },
+    {
+        "id": 1,
+        "name": "MR. ROBOT",
+        "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem .",
+        "powers": "Transport Objects through HTTP",
+        "rate": 4
+    },
+    {
+        "id": 2,
+        "name": "Richard Stallman",
+        "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem .",
+        "powers": "Coding with VIM, Know Angular",
+        "rate": 2
+    }
+]

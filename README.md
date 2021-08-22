@@ -1,27 +1,36 @@
-# Sary
+## Sary Technical Assessment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
+This repo represents a solution for Sary Technical Task
+- [Requirement](#Requirement)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribution](#contribution)
+- [License](#license)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Requirement
+angular version >= 12.0.5
+node version >= 6.14.14
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+npm install
+ng serve
+```
 
-## Build
+## Usage
+Once the app is initialized and the **heroes** list is opened . 
+The app use the http module to get some data from a JSON file and add it to the application state.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Contribution
 
-## Running unit tests
+We are open to, and grateful for, any contributions made by the community.
+By contributing to Bosta, you agree to abide by the code of conduct.
+- [Contributing Guide](CONTRIBUTING.md) 
+- [Code of Conduct](CODE_OF_CONDUCT.md)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## License
 
-## Running end-to-end tests
+The MIT License (MIT) [License](LICENSE).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

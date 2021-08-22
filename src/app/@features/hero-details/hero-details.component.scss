@@ -1,0 +1,57 @@
+.heroes-details {
+    margin-top: 70px;
+    background-color: #fafafa !important;
+    background-image: url(../../../assets/images/black-widow.png);
+    background-size: 30% 100%;
+    background-position: right;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 92vh;
+    .details__box {
+        margin-left: 100px;
+        padding-top: 100px;
+        .container {
+            margin-top: 50px;
+            margin-bottom: 100px;
+            .row {
+                margin-top: 20px;
+                .table__header {
+                    max-width: 200px;
+                }
+            }
+        }
+        .details__container {
+            width: 800px;
+            position: relative;
+            background-color: #fff;
+            border: 1px solid rgba(112, 110, 110, 0.125);
+            padding: 30px;
+            .hero__img {
+                display: flex;
+                justify-content: center;
+                border-radius: 50%;
+                background: #e2dede;
+                padding-top: 15px;
+                width: 60px;
+                height: 60px;
+                margin: auto;
+                span {
+                    font-size: 30px;
+                    color: #a8a3a3;
+                }
+            }
+        }
+        .hero__powers {
+            margin-bottom: 50px;
+            .col {
+                margin-bottom: 20px;
+            }
+            .hero__power {
+                padding-left: 15px;
+            }
+        }
+    }
+}
